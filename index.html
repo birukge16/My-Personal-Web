@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biruk Getaneh | Portfolio</title>
+    <link rel="stylesheet" href="port 3.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="#" class="logo">Biruk<span>Portfolio</span></a>
+
+          <!-- Hamburger -->
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <!-- Links -->
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Hello, I’m <span class="highlight">Biruk Getaneh</span></h1>
+        <p>3rd Year Applied Nutrition Student & Front-End Developer</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container about-content">
+        <img
+          src="images /personal photo.jpg"
+          alt="Biruk's profile photo"
+          class="profile-img"
+        />
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            Hi! I'm Biruk Getaneh, a third-year Applied Nutrition student at
+            <strong
+              >Addis Ababa Science and Technology University (AASTU)</strong
+            >. While studying nutrition, I discovered a passion for
+            <strong>coding</strong>. I enjoy creating simple, clean, and
+            responsive websites that people love to use.
+          </p>
+
+          <h3>Skills</h3>
+          <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+
+          <h3>Find Me Online</h3>
+          <p>
+            <a href="https://github.com/birukge16" target="_blank">GitHub</a>
+            |
+            <a href="https://linkedin.com/in/birukge16" target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+
+          <!-- Interactive Resume Button -->
+          <a href="resume.html" class="btn" target="_blank">View My Resume</a>
+          <a href="files/Biruk_Getane_Resume.pdf" class="btn" target="_blank"
+            >Download PDF</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-card">
+          <img
+            src="images /seminesh.jpg"
+            alt="Screenshot of my first project"
+            class="project-img"
+          />
+          <h1>My First Website</h1>
+          <h3>SEMINESH KIDANEMHIRET MONASTERY</h3>
+          <p>A simple static site built with HTML and CSS.</p>
+          <a href="https://github.com/birukge16/myproject" target="_blank">
+            Source Code
+          </a>
+          |
+          <a
+            href="https://birukge16.github.io/Seminesh-Kidanemhiret/"
+            target="_blank"
+          >
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Biruk Getaneh. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      });
+
+      //  close menu when clicking
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+          hamburger.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>

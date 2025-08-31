@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - Biruk Getane Haile</title>
+    <link rel="stylesheet" href="resume.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="resume-container">
+      <!-- Header -->
+      <header class="resume-header">
+        <img
+          src="images /personal photo.jpg"
+          alt="Biruk Getane Haile"
+          class="profile-img"
+        />
+        <h1>Biruk Getane Haile</h1>
+        <p class="contact">
+          <i class="fa fa-envelope"></i> birukgetaneh16@gmail.com |
+          <i class="fa fa-phone"></i> 0933650193 |
+          <i class="fa fa-location-dot"></i> Addis Ababa
+        </p>
+        <!-- Download Resume Button -->
+        <a
+          href="files/Biruk_Getane_Resume.pdf"
+          class="btn-download"
+          target="_blank"
+        >
+          <i class="fa fa-download"></i> Download Resume
+        </a>
+      </header>
+
+      <!-- Education -->
+      <section class="resume-section">
+        <h2>Education</h2>
+        <p>
+          Third Year, Applied Nutrition – Addis Ababa Science and Technology
+          University (AASTU)
+        </p>
+      </section>
+
+      <!-- Skills -->
+      <section class="resume-section">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skill">
+            <span>HTML</span>
+            <div class="skill-bar" data-width="90">
+              <div class="skill-fill"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>CSS</span>
+            <div class="skill-bar" data-width="80">
+              <div class="skill-fill"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="resume-section">
+        <h2>Projects</h2>
+        <p>
+          <strong>Seminesh Kidanemhiret</strong> – Static Website built with
+          HTML & CSS
+        </p>
+      </section>
+
+      <!-- Hobbies & Interests -->
+      <section class="resume-section">
+        <h2>Hobbies & Interests</h2>
+        <p>Coding and problem solving</p>
+      </section>
+
+      <!-- Languages -->
+      <section class="resume-section">
+        <h2>Languages</h2>
+        <p>Amharic, English</p>
+      </section>
+
+      <!-- Social Links -->
+      <section class="resume-section">
+        <h2>Social Links</h2>
+        <p>
+          <i class="fab fa-github"></i>
+          <a href="https://github.com/birukge16" target="_blank">GitHub</a> |
+          <i class="fab fa-linkedin"></i>
+          <a href="https://linkedin.com/in/birukge16" target="_blank"
+            >LinkedIn</a
+          >
+        </p>
+      </section>
+    </div>
+
+    <!-- JS for skill bar animation -->
+    <script>
+      window.addEventListener("load", () => {
+        const skillBars = document.querySelectorAll(".skill-bar");
+        skillBars.forEach((bar) => {
+          const fill = bar.querySelector(".skill-fill");
+          const width = bar.getAttribute("data-width");
+          fill.style.width = width + "%";
+        });
+      });
+    </script>
+  </body>
+</html>
